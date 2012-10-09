@@ -108,6 +108,8 @@ class OpenlayersPlugin:
     self.iface = iface
     # Layers
     self.olLayerTypeRegistry = OlLayerTypeRegistry()
+    self.olLayerTypeRegistry.add( OlLayerType(self, 'MAPC Basemap', 'mapc_icon.png', 'mapc_basemap.html', True) )
+    self.olLayerTypeRegistry.add( OlLayerType(self, 'MAPC Trailmap', 'mapc_icon.png', 'mapc_trailmap.html', True) )
     self.olLayerTypeRegistry.add( OlLayerType(self, 'Google Physical', 'google_icon.png', 'google_physical.html', True) )
     self.olLayerTypeRegistry.add( OlLayerType(self, 'Google Streets', 'google_icon.png', 'google_streets.html', True) )
     self.olLayerTypeRegistry.add( OlLayerType(self, 'Google Hybrid', 'google_icon.png', 'google_hybrid.html', True) )
